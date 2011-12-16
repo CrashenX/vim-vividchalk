@@ -1,6 +1,6 @@
 " Vim color scheme
 " Name:         vividchalk.vim
-" Author:       Tim Pope <vimNOSPAM@tpope.info>
+" Author:       Tim Pope <vimNOSPAM@tpope.info> : edited by Jesse Cook
 " Version:      2.0
 " GetLatestVimScripts: 1891 1 :AutoInstall: vividchalk.vim
 
@@ -96,9 +96,9 @@ highlight link diffSubname      Comment
 
 call s:hifg("Normal","#EEEEEE","White",87)
 if &background == "light" || has("gui_running")
-    hi Normal guibg=Black ctermbg=Black
+    hi Normal guibg=#2D201B ctermbg=Black
 else
-    hi Normal guibg=Black ctermbg=NONE
+    hi Normal guibg=#2D201B ctermbg=NONE
 endif
 highlight StatusLine    guifg=Black   guibg=#aabbee gui=bold ctermfg=Black ctermbg=White  cterm=bold
 highlight StatusLineNC  guifg=#444444 guibg=#aaaaaa gui=none ctermfg=Black ctermbg=Grey   cterm=none
@@ -119,8 +119,7 @@ highlight SpecialKey    guifg=#404040 ctermfg=8
 highlight Directory     none
 high link Directory     Identifier
 highlight ErrorMsg      guibg=Red ctermbg=DarkRed guifg=NONE ctermfg=NONE
-highlight Search        guifg=NONE ctermfg=NONE gui=none cterm=none
-call s:hibg("Search"    ,"#555555","DarkBlue",81)
+hi Search	guibg=olivedrab guifg=wheat
 highlight IncSearch     guifg=White guibg=Black ctermfg=White ctermbg=Black
 highlight MoreMsg       guifg=#00AA00 ctermfg=Green
 highlight LineNr        guifg=#DDEEFF ctermfg=White
@@ -140,10 +139,8 @@ highlight SpellRare     ctermbg=DarkMagenta
 highlight SpellCap      ctermbg=DarkBlue
 highlight SpellLocal    ctermbg=DarkCyan
 
-call s:hibg("Folded"    ,"#110077","DarkBlue",17)
-call s:hifg("Folded"    ,"#aaddee","LightCyan",63)
-highlight FoldColumn    none
-high link FoldColumn    Folded
+hi Folded	ctermfg=darkgrey ctermbg=NONE
+hi FoldColumn	ctermfg=black ctermbg=NONE
 highlight DiffAdd       ctermbg=4 guibg=DarkBlue
 highlight DiffChange    ctermbg=5 guibg=DarkMagenta
 highlight DiffDelete    ctermfg=12 ctermbg=6 gui=bold guifg=Blue guibg=DarkCyan
