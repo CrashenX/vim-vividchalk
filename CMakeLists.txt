@@ -8,7 +8,7 @@ set (VIVIDCHALK_VERSION_MAJOR 1)
 set (VIVIDCHALK_VERSION_MINOR 0)
 
 set (VIVIDCHALK_INSTALL_DIR
-    "${CMAKE_INSTALL_PREFIX}/share/vim/vim73/colors/")
+    "${CMAKE_INSTALL_PREFIX}/share/vim/vim74/colors/")
 
 # Copy files with 644 permissions
 install(FILES colors/vividchalk.vim
